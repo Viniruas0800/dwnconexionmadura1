@@ -509,13 +509,13 @@ export default function Upsell1Screen({ onNavigate }: Upsell1ScreenProps) {
                 <div
                   dangerouslySetInnerHTML={{
                     __html: `
-<div style="width: auto; max-width: 400px;">
-    <a href="javascript:void(0)" data-fornpay="vwko0x8aqq" class="fornpay_btn">DESBLOQUEAR ACCESO PRO</a>
-    <a href="javascript:void(0)" data-downsell="https://thankspageconexionmadura.netlify.app/" class="fornpay_downsell">No quiero esta oferta con descuento.</a>
-</div>
-
-<style>
-    .fornpay_btn {
+	<div style="width: auto; max-width: 400px;">
+        <a href="javascript:void(0)" data-fornpay="vwko0x8aqq" class="fornpay_btn">DESBLOQUEAR ACCESO PRO</a>
+        <a href="javascript:void(0)" data-downsell="https://thankspageconexionmadura.netlify.app/" class="fornpay_downsell">No quiero esta oferta con descuento.</a>
+			
+    </div>
+    <style>
+     .fornpay_btn {
         background: #4CAF50;
         background-image: -webkit-linear-gradient(top, #4CAF50, #2E7D32);
         background-image: -moz-linear-gradient(top, #4CAF50, #2E7D32);
@@ -550,7 +550,7 @@ export default function Upsell1Screen({ onNavigate }: Upsell1ScreenProps) {
         cursor: pointer;
         text-align: center;
     }
-</style>
+    </style>
 
                     `,
                   }}
