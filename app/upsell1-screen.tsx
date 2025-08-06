@@ -505,56 +505,58 @@ export default function Upsell1Screen({ onNavigate }: Upsell1ScreenProps) {
                   </div>
                 </div>
 
-                {/* REPLACED BUTTON BLOCK */}
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `
-	<div style="width: auto; max-width: 400px;">
-        <a href="javascript:void(0)" data-fornpay="vwko0x8aqq" class="fornpay_btn">DESBLOQUEAR ACCESO PRO</a>
-        <a href="javascript:void(0)" data-downsell="https://thankspageconexionmadura.netlify.app/" class="fornpay_downsell">No quiero esta oferta con descuento.</a>
-			
-    </div>
-    <style>
-     .fornpay_btn {
-        background: #4CAF50;
-        background-image: -webkit-linear-gradient(top, #4CAF50, #2E7D32);
-        background-image: -moz-linear-gradient(top, #4CAF50, #2E7D32);
-        background-image: -ms-linear-gradient(top, #4CAF50, #2E7D32);
-        background-image: -o-linear-gradient(top, #4CAF50, #2E7D32);
-        background-image: -webkit-gradient(to bottom, #4CAF50, #2E7D32);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        color: #fff;
-        font-family: Arial;
-        font-size: 18px;
-        font-weight: 100;
-        padding: 10px 20px;
-        border: 1px solid #2E7D32;
-        text-decoration: none;
-        display: block;
-        cursor: pointer;
-        text-align: center;
-    }
+{/* BOTÕES FORNPAY ADAPTADOS */}
+<div style={{ width: "auto", maxWidth: "400px" }}>
+  <a
+    href="javascript:void(0)"
+    data-fornpay="vwko0x8aqq"
+    className="fornpay_btn"
+  >
+    DESBLOQUEAR ACCESO PRO
+  </a>
+  <a
+    href="javascript:void(0)"
+    data-downsell="https://thankspageconexionmadura.netlify.app/"
+    className="fornpay_downsell"
+  >
+    No quiero esta oferta con descuento.
+  </a>
 
+  <style jsx>{`
+    .fornpay_btn {
+      background: #4caf50;
+      background-image: -webkit-linear-gradient(top, #4caf50, #2e7d32);
+      background-image: -moz-linear-gradient(top, #4caf50, #2e7d32);
+      background-image: -ms-linear-gradient(top, #4caf50, #2e7d32);
+      background-image: -o-linear-gradient(top, #4caf50, #2e7d32);
+      border-radius: 10px;
+      color: #fff;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: 100;
+      padding: 10px 20px;
+      border: 1px solid #2e7d32;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+      text-align: center;
+    }
     .fornpay_downsell {
-        color: #3b3a3a;
-        font-family: Arial;
-        margin-top: 10px;
-        font-size: 16px!important;
-        font-weight: 100;
-        text-decoration: none;
-        display: block;
-        padding: 10px 20px;
-        border-radius: 8px;
-        cursor: pointer;
-        text-align: center;
+      color: #3b3a3a;
+      font-family: Arial;
+      margin-top: 10px;
+      font-size: 16px !important;
+      font-weight: 100;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
     }
-    </style>
+  `}</style>
+</div>
 
-                    `,
-                  }}
-                />
 
                 <div className="text-center mt-4">
                   <p className="text-xs text-gray-500">🔒 Pago seguro procesado por Hotmart • Garantía de 7 días</p>
@@ -572,12 +574,7 @@ export default function Upsell1Screen({ onNavigate }: Upsell1ScreenProps) {
           className="container mx-auto px-4 py-8 text-center"
         >
           <p className="text-gray-500 text-sm mb-4">Esta oferta expira en {formatTime(timeLeft)} • No se repetirá</p>
-          <button
-            onClick={handleBackRedirect}
-            className="text-gray-400 hover:text-gray-300 text-sm underline transition-colors"
-          >
-            No, prefiero continuar con la versión gratuita limitada
-          </button>
+          
         </motion.footer>
       </div>
 
