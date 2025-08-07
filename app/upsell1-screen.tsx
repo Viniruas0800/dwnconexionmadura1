@@ -505,70 +505,71 @@ return (
                 </div>
               </div>
 
-              {/* MUNDPAY BUTTONS (replacing previous Fornpay block) */}
-              <div className="mndpay_container">
-                <a
-                  href="javascript:void(0)"
-                  data-mndpay="01988672-6450-717e-9b28-af610d71b4bc"
-                  className="mndpay_btn"
-                >
-                  Sim, eu quero comprar!
-                </a>
-                <a
-                  href="javascript:void(0)"
-                  data-downsell="https://dwnconexionmadura1.vercel.app/"
-                  className="mndpay_downsell"
-                >
-                  Não, eu não quero comprar!
-                </a>
+    {/* MUNDPAY BUTTONS - new implementation */}
+    <div className="mndpay_container">
+      <a
+        href="javascript:void(0)"
+        data-mndpay="019886a4-69e8-7297-8dfb-10237298af5c"
+        className="mndpay_btn"
+      >
+        Sim, eu quero comprar!
+      </a>
+      <a
+        href="javascript:void(0)"
+        data-downsell="https://thankspageconexionmadura.netlify.app/"
+        className="mndpay_downsell"
+      >
+        Não, eu não quero comprar!
+      </a>
 
-                <style jsx>{`
-                  .mndpay_container {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    max-width: 36rem;
-                    margin: 0 auto;
-                    gap: 1rem;
-                  }
-                  .mndpay_btn {
-                    background: #5cce5e;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    border-radius: 10px;
-                    color: #ffffff;
-                    font-family: Arial;
-                    font-size: 18px;
-                    font-weight: 100;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    display: block;
-                    cursor: pointer;
-                    text-align: center;
-                  }
-                  .mndpay_downsell {
-                    background: #fc0202;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    border-radius: 10px;
-                    color: #ffffff;
-                    font-family: Arial;
-                    font-size: 18px;
-                    font-weight: 100;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    display: block;
-                    cursor: pointer;
-                    text-align: center;
-                  }
-                  @media (min-width: 640px) {
-                    .mndpay_container {
-                      flex-direction: column;
-                    }
-                  }
-                `}</style>
-              </div>
-              <Script src="https://upsell.mundpay.com/script.js" strategy="afterInteractive" />
+      <style jsx>{`
+        .mndpay_container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 36rem;
+          margin: 0 auto;
+          gap: 1rem;
+        }
+        .mndpay_btn {
+          background: #5cce5e;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          color: #000000;
+          font-family: Arial;
+          font-size: 18px;
+          font-weight: 100;
+          padding: 10px 20px;
+          text-decoration: none;
+          display: block;
+          cursor: pointer;
+          text-align: center;
+        }
+        .mndpay_downsell {
+          background: #dc2626;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          color: #ffffff;
+          font-family: Arial;
+          font-size: 18px;
+          font-weight: 100;
+          padding: 10px 20px;
+          text-decoration: none;
+          display: block;
+          cursor: pointer;
+          text-align: center;
+        }
+        @media (min-width: 640px) {
+          .mndpay_container {
+            flex-direction: column;
+          }
+        }
+      `}</style>
+    </div>
+    <Script src="https://upsell.mundpay.com/script.js" strategy="afterInteractive" />
+
 
               <div className="text-center mt-4">
                 <p className="text-xs text-gray-500">🔒 Pago seguro procesado por Hotmart • Garantía de 7 días</p>
