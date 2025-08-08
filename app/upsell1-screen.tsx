@@ -536,10 +536,10 @@ return (
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
           border-radius: 10px;
-          color: #000000;
+          color: #ffffff;
           font-family: Arial;
           font-size: 18px;
-          font-weight: 100;
+          font-weight: 200;
           padding: 10px 20px;
           text-decoration: none;
           display: block;
