@@ -512,14 +512,14 @@ return (
         data-mndpay="019886a4-69e8-7297-8dfb-10237298af5c"
         className="mndpay_btn"
       >
-        Sim, eu quero comprar!
+        Desbloquear Con Descuento
       </a>
       <a
         href="javascript:void(0)"
         data-downsell="https://thankspageconexionmadura.netlify.app/"
         className="mndpay_downsell"
       >
-        Não, eu não quero comprar!
+        Dejaré pasar esta oportunidad
       </a>
 
       <style jsx>{`
@@ -572,7 +572,7 @@ return (
 
 
               <div className="text-center mt-4">
-                <p className="text-xs text-gray-500">🔒 Pago seguro procesado por Hotmart • Garantía de 7 días</p>
+                <p className="text-xs text-gray-500">🔒 Pago seguro procesado por MundPay • Garantía de 7 días</p>
               </div>
             </div>
           </div>
