@@ -516,7 +516,7 @@ return (
       </a>
       <a
         href="javascript:void(0)"
-        data-downsell="https://thankspageconexionmadura.netlify.app/"
+        data-downsell="https://up2conemadura.netlify.app/"
         className="mndpay_downsell"
       >
         Dejaré pasar esta oportunidad
