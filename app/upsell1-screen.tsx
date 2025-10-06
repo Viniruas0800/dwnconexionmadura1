@@ -568,7 +568,7 @@ return (
         }
       `}</style>
     </div>
-    <Script src="https://upsell.mundpay.com/script.js" strategy="afterInteractive" />
+    <Script src="https://upsell.mundpay.com/script-v2.js" strategy="afterInteractive" />
 
 
               <div className="text-center mt-4">
